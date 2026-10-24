@@ -1,0 +1,120 @@
+{
+  "baseline": {
+    "accuracy": 0.71875,
+    "by_group": {
+      "accuracy": {
+        "0": 0.6970954356846473,
+        "1": 0.7405857740585774
+      },
+      "selection_rate": {
+        "0": 0.5062240663900415,
+        "1": 0.5941422594142259
+      },
+      "TPR": {
+        "0": 0.788235294117647,
+        "1": 0.7631578947368421
+      },
+      "FPR": {
+        "0": 0.3525641025641026,
+        "1": 0.2988505747126437
+      }
+    },
+    "group_counts": {
+      "0": 241,
+      "1": 239
+    },
+    "demographic_parity_gap": 0.08791819302418447,
+    "equalized_odds_gap": 0.05371352785145889,
+    "aif360_statistical_parity_difference": -0.08791819302418447,
+    "aif360_disparate_impact": 0.852025013149436
+  },
+  "aif360_reweighed": {
+    "accuracy": 0.71875,
+    "by_group": {
+      "accuracy": {
+        "0": 0.6721991701244814,
+        "1": 0.7656903765690377
+      },
+      "selection_rate": {
+        "0": 0.5394190871369294,
+        "1": 0.5355648535564853
+      },
+      "TPR": {
+        "0": 0.8,
+        "1": 0.7368421052631579
+      },
+      "FPR": {
+        "0": 0.3974358974358974,
+        "1": 0.1839080459770115
+      }
+    },
+    "group_counts": {
+      "0": 241,
+      "1": 239
+    },
+    "demographic_parity_gap": 0.003854233580444122,
+    "equalized_odds_gap": 0.21352785145888592,
+    "aif360_statistical_parity_difference": 0.003854233580444122,
+    "aif360_disparate_impact": 1.0071965767634856
+  },
+  "fairlearn_threshold": {
+    "accuracy": 0.7083333333333334,
+    "by_group": {
+      "accuracy": {
+        "0": 0.6763485477178424,
+        "1": 0.7405857740585774
+      },
+      "selection_rate": {
+        "0": 0.5435684647302904,
+        "1": 0.5690376569037657
+      },
+      "TPR": {
+        "0": 0.8117647058823529,
+        "1": 0.743421052631579
+      },
+      "FPR": {
+        "0": 0.3974358974358974,
+        "1": 0.26436781609195403
+      }
+    },
+    "group_counts": {
+      "0": 241,
+      "1": 239
+    },
+    "demographic_parity_gap": 0.02546919217347532,
+    "equalized_odds_gap": 0.13306808134394338,
+    "aif360_statistical_parity_difference": -0.02546919217347532,
+    "aif360_disparate_impact": 0.9552416402245544
+  },
+  "explainability": {
+    "model": "baseline logistic regression only",
+    "shap_units": "log odds",
+    "shap_base_value": -0.15891999817815325,
+    "shap_first_row": {
+      "skills": -0.41984149479252525,
+      "experience": -0.6397608549214967,
+      "access_proxy": -0.24595087456073286
+    },
+    "shap_mean_absolute": {
+      "skills": 1.1479176821621313,
+      "experience": 0.4221069401799501,
+      "access_proxy": 0.2968418516892884
+    },
+    "first_row_log_odds": -1.4644732224529082,
+    "lime_probability_contributions": [
+      [
+        "experience <= -0.67",
+        -0.16542843035695917
+      ],
+      [
+        "-0.72 < skills <= -0.03",
+        -0.1266080701192814
+      ],
+      [
+        "-0.14 < access_proxy <= 0.42",
+        -0.02903526375595546
+      ]
+    ],
+    "lime_surrogate_r_squared": 0.12930570776208605
+  }
+}

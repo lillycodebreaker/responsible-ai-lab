@@ -1,0 +1,17 @@
+Could not find platform dependent libraries <exec_prefix>
+...........                                                              [100%]
+============================== warnings summary ===============================
+tests/test_lab.py::test_explanations_and_fairness
+  C:\Users\lilyq\Documents\ChatGPT\FDE\responsible-ai-lab\.venv\Lib\site-packages\shap\plots\colors\_colors.py:47: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+    red_blue.set_bad(gray_rgb.tolist(), 1.0)
+
+tests/test_lab.py::test_explanations_and_fairness
+  C:\Users\lilyq\Documents\ChatGPT\FDE\responsible-ai-lab\.venv\Lib\site-packages\shap\plots\colors\_colors.py:48: PendingDeprecationWarning: The set_over function will be deprecated in a future version. Use cmap.with_extremes(over=...) or Colormap(over=...) instead.
+    red_blue.set_over(gray_rgb.tolist(), 1.0)
+
+tests/test_lab.py::test_explanations_and_fairness
+  C:\Users\lilyq\Documents\ChatGPT\FDE\responsible-ai-lab\.venv\Lib\site-packages\shap\plots\colors\_colors.py:49: PendingDeprecationWarning: The set_under function will be deprecated in a future version. Use cmap.with_extremes(under=...) or Colormap(under=...) instead.
+    red_blue.set_under(gray_rgb.tolist(), 1.0)  # "under" is incorrectly used instead of "bad" in the scatter plot
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+11 passed, 3 warnings in 24.56s
